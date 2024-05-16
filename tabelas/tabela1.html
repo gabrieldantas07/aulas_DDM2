@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding:10px
+            
+        
+        }
+        caption{
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightgray;
+        }
+        td.num{
+            text-align: right;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESTRUTURA DE TABELAS GRANDES</h1>
+    <table>
+        <caption> POPULAÇÃO DOS ESTADOS</caption>
+       <thead>
+            <th colspan="3">SUDESTE </th>
+       </thead>
+        <thead>
+            <th colspan="2" class="num">Estado</th>
+            <th colspan="1" class="num">Quantidade</th>
+        </thead>
+
+        <tr>
+            <td colspan="2" class="num">São Paulo</td>
+            <td colspan="0" class="num">44 milhões</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="num">Minas Gerais</td>
+            <td colspan="0" class="num">20 milhões</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="num">Rio de Janeiro</td>
+            <td colspan="0" class="num">16 milhões</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="num">Espírito Santo</td>
+            <td colspan="0" class="num">4 milhões</td>
+        </tr>
+        <thead>
+            <th colspan="2">Total de Habitantes</th>
+            <th colspan="1" > 84 milhões</th> 
+        </thead>
+    </table>
+</body>
+</html>
